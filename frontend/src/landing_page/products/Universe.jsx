@@ -1,5 +1,5 @@
 import React from 'react'
-import TradeFlowfund from '../../assets/images/TradeFlowFundhouse.png'
+import TradeFlowfund from '../../assets/images/zerodhaFundhouse.png'
 import sensibol from "../../assets/images/sensibullLogo.svg"
 import tijori from '../../assets/images/tijori.svg'
 import streek from '../../assets/images/streakLogo.png'
