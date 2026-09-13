@@ -11,7 +11,7 @@ const BuyActionWindow = ({ uid }) => {
 const { closeBuyWindow } = useContext(GeneralContext);
   const handleBuyClick = async () => {
     try{
-    await axios.post("http://localhost:4000/newOrder", {
+    await axios.post("https://tradeflow-7egr.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

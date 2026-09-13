@@ -8,7 +8,7 @@ const Orders = () => {
   let [ShowOrder, setshowOrder] = useState([])
 
   useEffect(()=>{
-    axios.get('http://localhost:4000/showOrders').then((res)=>{
+    axios.get('https://tradeflow-7egr.onrender.com/showOrders').then((res)=>{
       
       setshowOrder(res.data)
       

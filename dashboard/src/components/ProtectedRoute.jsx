@@ -31,7 +31,7 @@ const ProtectedRoute = ({ children }) => {
   }
 
   if (!authenticated) {
-    window.location.href = "http://localhost:5173";
+    window.location.href = "https://tradeflow-frontend-0ma5.onrender.com";
     return null;
   }
 

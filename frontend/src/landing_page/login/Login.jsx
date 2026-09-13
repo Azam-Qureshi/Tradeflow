@@ -38,7 +38,7 @@ const Login = () => {
       // localStorage.setItem("token", response.data.token);
 
       alert("Login successful!");
-      window.location.href = "http://localhost:5174";
+      window.location.href = "https://tradeflow-dashboard-wbks.onrender.com";
 
     } catch (err) {
       console.error(err);
