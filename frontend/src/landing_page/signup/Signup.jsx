@@ -25,7 +25,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await axios.post("http://localhost:4000/signup", formData);
+    const response = await axios.post("https://tradeflow-7egr.onrender.com/signup", formData);
 
     console.log(response.data);
     alert("Signup successful!");

@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/verify", {
+      .get("https://tradeflow-7egr.onrender.com/verify", {
         withCredentials: true,
       })
       .then((res) => {
@@ -16,8 +16,10 @@ const ProtectedRoute = ({ children }) => {
         setAuthenticated(true);
       })
       .catch((err) => {
-        console.log("Not authenticated:", err.response?.data);
-        setAuthenticated(false);
+         console.log("VERIFY ERROR:", err);
+  console.log("STATUS:", err.response?.status);
+  console.log("DATA:", err.response?.data);
+  setAuthenticated(false);
       })
       .finally(() => {
         setLoading(false);

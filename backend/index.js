@@ -17,7 +17,7 @@ const URL = process.env.MONGO_URL;
 const app = express();
 app.use(cors(
   {
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ["http://localhost:5173", "http://localhost:5174","https://tradeflow-7egr.onrender.com"],
     credentials: true,
   }
 ));
@@ -170,8 +170,8 @@ app.post("/login", async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000, // 1 day
     });
 

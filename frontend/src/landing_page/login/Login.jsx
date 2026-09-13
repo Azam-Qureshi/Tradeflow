@@ -25,7 +25,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/login",
+        "https://tradeflow-7egr.onrender.com/login",
         formData,
         {
     withCredentials: true,
@@ -35,7 +35,7 @@ const Login = () => {
       console.log(response.data);
 
       // Store JWT token
-      localStorage.setItem("token", response.data.token);
+      // localStorage.setItem("token", response.data.token);
 
       alert("Login successful!");
       window.location.href = "http://localhost:5174";
