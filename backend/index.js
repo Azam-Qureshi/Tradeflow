@@ -17,7 +17,7 @@ const URL = process.env.MONGO_URL;
 const app = express();
 app.use(cors(
   {
-    origin: ["http://localhost:5173", "http://localhost:5174","https://tradeflow-7egr.onrender.com","https://tradeflow-dashboard-wbks.onrender.com"],
+    origin: ["http://localhost:5173", "http://localhost:5174","https://tradeflow-frontend-0ma5.onrender.com","https://tradeflow-dashboard-wbks.onrender.com"],
     credentials: true,
   }
 ));
