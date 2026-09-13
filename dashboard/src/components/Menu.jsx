@@ -16,7 +16,7 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:4000/logout",
+        "https://tradeflow-7egr.onrender.com/logout",
         {},
         {
           withCredentials: true,
